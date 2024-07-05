@@ -1,3 +1,9 @@
+*{
+    background-image: url(asset/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 .play{
     height: 300px;
     width: 300px;
@@ -17,10 +23,10 @@ audio::-webkit-media-controls-panel {
 }
 audio::-webkit-media-controls-mute-button {
     background-color: rgb(236, 236, 92);
-    border-radius: 50%;
-}
+    border-radius: 50%;}
+
 audio::-webkit-media-controls-play-button{
     background-color: red ;
     border-radius: 50%;
-    color: #56AEFF;
-}
+        color: #56AEFF;
+  }
