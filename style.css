@@ -1,0 +1,26 @@
+.play{
+    height: 300px;
+    width: 300px;
+    margin:200px auto 30px ;
+}
+h1{
+    text-align: center;
+    color:lightcoral
+}
+audio{
+
+    color: red;
+    
+}
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(to right, red , yellow);
+}
+audio::-webkit-media-controls-mute-button {
+    background-color: rgb(236, 236, 92);
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: red ;
+    border-radius: 50%;
+    color: #56AEFF;
+}
