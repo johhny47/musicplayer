@@ -1,42 +1,108 @@
-.back{
+/* Base styles (for larger screens) */
+.back {
     background-image: url(asset/bgimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
     width: 1300px;
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
 }
-.play{
-   position:absolute;
-   top:50%; 
-   left:0%;
-   text-align: center;
-   margin-left:400px ;
- 
-}
-h1{
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 0%;
     text-align: center;
-    background-color: rgb(255, 252, 252) ;
-    color:rgb(7, 139, 239);
-    padding:20px 0px;
+    margin-left: 400px;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(255, 252, 252);
+    color: rgb(7, 139, 239);
+    padding: 20px 0px;
     border-radius: 4%;
     opacity: 0.8;
 }
-audio{
 
+audio {
     color: red;
-    
 }
+
 audio::-webkit-media-controls-panel {
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, red, yellow);
 }
+
 audio::-webkit-media-controls-mute-button {
     background-color: rgb(236, 236, 92);
-    border-radius: 50%;}
-
-audio::-webkit-media-controls-play-button{
-    background-color: red ;
     border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: red;
+    border-radius: 50%;
+    color: #56AEFF;
+}
+
+/* Mobile styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+    .back {
+        height: 400px; /* Adjust height for mobile */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    .play {
+        position: absolute;
+        top: 50%;
+        left: 50%; /* Center play button horizontally */
+        transform: translateX(-50%); /* Adjust for perfect centering */
+        margin-left: 0; /* Remove margin for centering */
+    }
+
+    h1 {
+        font-size: 18px; /* Make text smaller for mobile */
+        padding: 10px 0px; /* Reduce padding for better fit */
+    }
+
+    audio {
+        width: 100%; /* Make audio controls responsive */
+        margin-top: 10px; /* Add space above audio controls */
+    }
+
+    audio::-webkit-media-controls-panel {
+        background-image: linear-gradient(to right, red, yellow);
+    }
+
+    audio::-webkit-media-controls-mute-button {
+        background-color: rgb(236, 236, 92);
+        border-radius: 50%;
+    }
+
+    audio::-webkit-media-controls-play-button {
+        background-color: red;
+        border-radius: 50%;
         color: #56AEFF;
-  }
+    }
+}
+
+/* Tablet styles (for screens between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .back {
+        height: 500px; /* Adjust height for tablet */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    .play {
+        position: absolute;
+        top: 50%;
+        left: 50%; /* Center play button horizontally */
+        transform: translateX(-50%); /* Adjust for perfect centering */
+        margin-left: 0; /* Remove margin for centering */
+    }
+
+    h1 {
+        font-size: 22px; /* Adjust font size for tablet */
+        padding: 15px 0px; /* Adjust padding for tablet */
+    }
+}
