@@ -2,22 +2,26 @@
     background-image: url(asset/bgimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 600px;
     width: 1300px;
     display:flex;
+    position:relative;
 }
 .play{
-   margin-top: 380px;
-   
+   position:absolute;
+   top:50%; 
+   left:0%;
    text-align: center;
    margin-left:400px ;
  
 }
 h1{
     text-align: center;
-    
-    
+    background-color: rgb(255, 252, 252) ;
     color:rgb(7, 139, 239);
+    padding:20px 0px;
+    border-radius: 4%;
+    opacity: 0.8;
 }
 audio{
 
